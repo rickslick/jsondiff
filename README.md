@@ -1,4 +1,4 @@
-<h1 align="center">jsondiff</h1>
+<h1 align="center">jsondiff with protobuf type support </h1>
 <br>
 <p align="center"><strong>jsondiff</strong> is a Go package for computing the <i>diff</i> between two JSON documents as a series of <a href="https://tools.ietf.org/html/rfc6902">RFC6902</a> (JSON Patch) operations, which is particularly suitable to create the patch response of a Kubernetes Mutating Webhook for example.</p>
 
