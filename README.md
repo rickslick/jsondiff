@@ -2,12 +2,12 @@
 <br>
 <p align="center"><strong>jsondiff</strong> is a Go package for computing the <i>diff</i> between two JSON documents as a series of <a href="https://tools.ietf.org/html/rfc6902">RFC6902</a> (JSON Patch) operations, which is particularly suitable to create the patch response of a Kubernetes Mutating Webhook for example.</p>
 <p align="center">
-    <a href="https://pkg.go.dev/github.com/wI2L/jsondiff"><img src="https://img.shields.io/static/v1?label=godev&message=reference&color=00add8&logo=go"></a>
+    <a href="https://pkg.go.dev/github.com/rickslick/jsondiff"><img src="https://img.shields.io/static/v1?label=godev&message=reference&color=00add8&logo=go"></a>
     <a href="https://jsondiff.wi2l.pw"><img src="https://img.shields.io/badge/%E2%9A%BE-playground-orange.svg?style=flat"></a>
-    <a href="https://goreportcard.com/report/wI2L/jsondiff"><img src="https://goreportcard.com/badge/github.com/wI2L/jsondiff"></a>
-    <a href="https://github.com/wI2L/jsondiff/actions"><img src="https://github.com/wI2L/jsondiff/workflows/CI/badge.svg"></a>
+    <a href="https://goreportcard.com/report/wI2L/jsondiff"><img src="https://goreportcard.com/badge/github.com/rickslick/jsondiff"></a>
+    <a href="https://github.com/rickslick/jsondiff/actions"><img src="https://github.com/rickslick/jsondiff/workflows/CI/badge.svg"></a>
     <a href="https://codecov.io/gh/wI2L/jsondiff"><img src="https://codecov.io/gh/wI2L/jsondiff/branch/master/graph/badge.svg"/></a>
-    <a href="https://github.com/wI2L/jsondiff/releases"><img src="https://img.shields.io/github/v/tag/wI2L/jsondiff?color=blueviolet&label=version&sort=semver"></a>
+    <a href="https://github.com/rickslick/jsondiff/releases"><img src="https://img.shields.io/github/v/tag/wI2L/jsondiff?color=blueviolet&label=version&sort=semver"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
     <a href="https://github.com/avelino/awesome-go"><img src="https://awesome.re/mentioned-badge.svg"></a>
 </p>
@@ -19,7 +19,7 @@
 First, get the latest version of the library using the following command:
 
 ```shell
-$ go get github.com/wI2L/jsondiff@latest
+$ go get github.com/rickslick/jsondiff@latest
 ```
 
 :warning: Requires Go1.14+, due to the usage of the package [`hash/maphash`](https://golang.org/pkg/hash/maphash/).
@@ -81,7 +81,7 @@ newPod.Spec.Volumes[0].EmptyDir.Medium = corev1.StorageMediumDefault
 Finally, generate the patch that represents the changes relative to the original value. Note that when the `Compare` or `CompareOpts` functions are used, the `source` and `target` parameters are first marshaled using the `encoding/json` package in order to obtain their final JSON representation, prior to comparing them.
 
 ```go
-import "github.com/wI2L/jsondiff"
+import "github.com/rickslick/jsondiff"
 
 patch, err := jsondiff.Compare(pod, newPod)
 if err != nil {

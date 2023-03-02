@@ -11,5 +11,5 @@ All notable changes to this project are documented in this file.
 ## [v0.1.0] - 2020-12-06
 Initial release.
 
-[v0.1.0]: https://github.com/wI2L/jsondiff/releases/tag/v0.1.0
-[v0.1.1]: https://github.com/wI2L/jsondiff/releases/tag/v0.1.1
+[v0.1.0]: https://github.com/rickslick/jsondiff/releases/tag/v0.1.0
+[v0.1.1]: https://github.com/rickslick/jsondiff/releases/tag/v0.1.1
