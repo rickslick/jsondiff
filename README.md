@@ -11,9 +11,7 @@
     <a href="https://pkg.go.dev/github.com/rickslick/jsondiff"><img src="https://img.shields.io/static/v1?label=godev&message=reference&color=00add8&logo=go"></a>
     <a href="https://jsondiff.wi2l.pw"><img src="https://img.shields.io/badge/%E2%9A%BE-playground-orange.svg?style=flat"></a>
     <a href="https://goreportcard.com/report/rickslick/jsondiff"><img src="https://goreportcard.com/badge/github.com/rickslick/jsondiff"></a>
-    <a href="https://github.com/rickslick/jsondiff/actions"><img src="https://github.com/rickslick/jsondiff/workflows/CI/badge.svg"></a>
-    <a href="https://codecov.io/gh/rickslick/jsondiff"><img src="https://codecov.io/gh/rickslick/jsondiff/branch/master/graph/badge.svg"/></a>
-    <a href="https://github.com/rickslick/jsondiff/releases"><img src="https://img.shields.io/github/v/tag/rickslick/jsondiff?color=blueviolet&label=version&sort=semver"></a>
+ 
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
     <a href="https://github.com/avelino/awesome-go"><img src="https://awesome.re/mentioned-badge.svg"></a>
 </p>
