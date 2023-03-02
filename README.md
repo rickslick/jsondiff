@@ -2,13 +2,11 @@
 <br>
 <p align="center"><strong>jsondiff</strong> is a Go package for computing the <i>diff</i> between two JSON documents as a series of <a href="https://tools.ietf.org/html/rfc6902">RFC6902</a> (JSON Patch) operations, which is particularly suitable to create the patch response of a Kubernetes Mutating Webhook for example.</p>
 
-<p align="center" > All credits goes to https://github.com/wI2L  </p>
-
-<p align="center" > Original code didnt support protobuf messages inherintly and generated wrong results if types is from https://github.com/protocolbuffers/protobuf/blob/main/src/google/protobuf/wrappers.proto . This code fixes the issue </p>
+<p align="center" > Original code didnt support protobuf messages inherintly and generated wrong results if comparison types are from https://github.com/protocolbuffers/protobuf/blob/main/src/google/protobuf/wrappers.proto . This code fixes the issue </p>
 
 
 <p align="center">
-    <a href="https://pkg.go.dev/github.com/rickslick/jsondiff"><img src="https://img.shields.io/static/v1?label=godev&message=reference&color=00add8&logo=go"></a>
+    <a href="https://pkg.go.dev/github.com/rickslick/jsondiff"><img  width="10" height="20" src="https://img.shields.io/static/v1?label=godev&message=reference&color=00add8&logo=go"/> </a>
     <a href="https://goreportcard.com/report/rickslick/jsondiff"><img src="https://goreportcard.com/badge/github.com/rickslick/jsondiff"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
     <a href="https://github.com/avelino/awesome-go"><img src="https://awesome.re/mentioned-badge.svg"></a>
