@@ -3,6 +3,7 @@ package jsondiff
 import (
 	"encoding/json"
 
+	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"
 )
 
@@ -78,7 +79,7 @@ func marshalUnmarshal(i interface{}) (interface{}, []byte, error) {
 	var b []byte
 	if isProto {
 
-		b, err = proto.Marshal(protofiedI)
+		b, err = protojson.Marshal(protofiedI)
 		if err != nil {
 			return nil, nil, err
 		}
