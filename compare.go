@@ -1,6 +1,10 @@
 package jsondiff
 
-import "encoding/json"
+import (
+	"encoding/json"
+
+	"google.golang.org/protobuf/proto"
+)
 
 // Compare compares the JSON representations of the
 // given values and returns the differences relative
@@ -68,9 +72,24 @@ func compareJSON(d *Differ, src, tgt []byte) (Patch, error) {
 // marshalUnmarshal returns the result of unmarshaling
 // the JSON representation of the given interface value.
 func marshalUnmarshal(i interface{}) (interface{}, []byte, error) {
-	b, err := json.Marshal(i)
-	if err != nil {
-		return nil, nil, err
+	protofiedI, isProto := i.(proto.Message)
+
+	var err error
+	var b []byte
+	if isProto {
+
+		b, err = proto.Marshal(protofiedI)
+		if err != nil {
+			return nil, nil, err
+		}
+
+	} else {
+
+		b, err = json.Marshal(i)
+		if err != nil {
+			return nil, nil, err
+		}
+
 	}
 	var val interface{}
 	if err := json.Unmarshal(b, &val); err != nil {
